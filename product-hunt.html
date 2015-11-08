@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+  font-family: 'proxima-nova', 'Proxima Nova', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ .welcome {
+   background: url("https://s3.producthunt.com/static/category-tech/kitty.png")
+   20px 15px/60px 60px no-repeat #fcf5e2;
+   margin: 0 0 10px 0;
+   padding: 22px 28px 2px 100px;
+ }
+
+ .welcome h3 {
+   color: black;
+   font-size: 15px;
+   margin-bottom: 8px;
+   line-height: 17px;
+   margin: 0 0 16px;
+   text-transform: uppercase;
+ }
+
+ .welcome a {
+   font-weight: bold;
+   font-size: 16px;
+   padding: 5px 20px;
+   color: #fff;
+
+}
+.welcome button {
+  background-color: #5898f1;
+  border-color: #5898f1;
+  position: absolute;
+  border-radius: 18px;
+  right: 80px;
+  top: 20px;
+  margin-top: 20px;
+ }
+
+ .collaspe{
+     background-color: #fff;
+ }
+
+.navbar-form input {
+  margin-left: 30px;
+}
+ .navbar-nav{
+  width: 100%;
+  float: none !important;
+  margin-left: 350px;
+ }
+
+ .navbar-nav a{
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 12px !important;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding: 15px 0 10px 0! important;
+}
+
+div#whole-thing {
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+}
+
+div#column-left {
+  float: left;
+  /*padding-bottom: 150px;*/
+  height: 250px;
+  width: 30%;
+  background: red;
+  margin: 0 1.5%;
+}
+
+div#column-right{
+  float:left;
+  /*padding-bottom: 150px;*/
+  height: 250px;
+  width: 30%;
+  background: blue;
+  margin: 0 1.5%;
+}
+
+
+div#column-center {
+  float: left;
+  /*padding-bottom: 150px;*/
+  height: 250px;
+  width: 30%;
+  background: green;
+  margin:0 1.5%;
+}
+
+h4 #day{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 24px;
+}
+
+h4 #date {
+  font-size: 14px;
+  color: #bbbbbb;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 13px;
+  margin-left: 8px;
+  }
+
+/*.container {*/
+  /*float: right;*/
+  /*display: block;*/
+/*}*/
+
+h4 #right-column{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 24px;
+  float: right;
+}
+
+</style>
+</head>
+
+<body>
+  <div>
+  <header class="welcome">
+    <h3>Welcome to Product Hunt!</h3>
+    <p>Discover the best new products, every day</p>
+    <a href=""><button>Join the Community</button></a>
+  </div>
+  <nav class="navbar navbar-default">
+  <div class="navbar-header-left">
+    <form class="navbar-form navbar-left">
+     <input type="text" class="form-contol" placeholder="Search">
+    </form>
+  </div>
+  <div class="collaspe navbar-collaspe" id="bs-example-navbar-collaspe-1">
+  <ul class="nav navbar-nav">
+    <li><a href="#">Tech</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Books</a><li>
+  <span class="header-logo">
+    <img src="http://codecondo.com/wp-content/uploads/2014/08/Product-Hunt-Logo.png" width="50" height="40">
+  </span>
+    <li><a href="#">Podcasts</a></li>
+    <li><a href="#">Collections</a></li>
+    <li><a href="#">Live</a></li>
+  </ul>
+  </div>
+</nav>
+<div id="whole-thing">
+  <div id="column-left">color red</div>
+  <div id="column-right">color blue</div>
+  <div id="column-center">color green</div>
+</div>
+<div>
+<h4 id="day">
+  <span>Today</span>
+  <span id="date">November 6th</span>
+  <span id="right-column">Featured</span>
+</h4>
+</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
