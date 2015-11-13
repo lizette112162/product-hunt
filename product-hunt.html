@@ -53,6 +53,23 @@ p {
 .navbar-form input {
   margin-left: 30px;
 }
+.form-label {
+  line-height: 30px;
+  position: absolute;
+  right: 12px;
+  top: 4px;
+}
+.form-field {
+  background: #f2f2f2;
+  border-radius: 4px;
+  border:1px solid #f2f2f2;
+  height: 30px;
+  padding: 0 12px;
+  text-transform:uppercase;
+  width: 100%;
+}
+
+
  .navbar-nav{
   width: 100%;
   float: none !important;
@@ -74,22 +91,23 @@ div#whole-thing {
   height: 100%;
   width:100%;
   overflow: hidden;
+
 }
 
 div#column-left {
   float: left;
   /*padding-bottom: 150px;*/
-  height: 250px;
-  width: 30%;
+  height: 180px;
+  width: 27%;
   background: red;
-  margin: 0 1.5%;
+  margin: 0 4.5%;
 }
 
 div#column-right{
   float:left;
   /*padding-bottom: 150px;*/
-  height: 250px;
-  width: 30%;
+  height: 180px;
+  width: 27%;
   background: blue;
   margin: 0 1.5%;
 }
@@ -98,17 +116,18 @@ div#column-right{
 div#column-center {
   float: left;
   /*padding-bottom: 150px;*/
-  height: 250px;
-  width: 30%;
+  height: 180px;
+  width: 27%;
   background: green;
-  margin:0 1.5%;
+  margin:0 3.5%;
 }
 
-h4 #day{
+h4 #day {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
   line-height: 24px;
+  margin-left: 80px;
 }
 
 h4 #date {
@@ -117,7 +136,7 @@ h4 #date {
   font-weight: normal;
   text-transform: none;
   line-height: 13px;
-  margin-left: 8px;
+  margin-left: 50px;
   }
 
 /*.container {*/
@@ -131,7 +150,77 @@ h4 #right-column{
   text-transform: capitalize;
   line-height: 24px;
   float: right;
+  margin-right: 90px;
 }
+
+.button-number {
+  font-size: 13px;
+  line-height:16px;
+  margin-left: 100px;
+  position: relative;
+  top: 50px;
+}
+
+.thumbnail-image {
+  /*display: block;*/
+  background: #fff none center;
+  align: center;
+  margin-left: 150px;
+  /*border-radius: inherit;*/
+  /*height: inherit;*/
+  /*width: inherit;*/
+}
+
+a.post-item {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  /*margin: 6px 2px 2px 0;*/
+  line-height: 22px;
+  margin-left: 50px;
+}
+
+.post-item-tag {
+  color: #999999;
+  font-size: 17px;
+  line-height: 30px;
+  margin-left: 50px;
+}
+
+.post-item-platform{
+  color: #bbbbbb;
+  text-transform: uppercase;
+  padding: 2px 4px 1px;
+  font-size: 10px;
+  font-weight: 600;
+  border: 2px solid rgba(187,187,187,0.5);
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+
+.badge-right img{
+  border-radius: 50%;
+  /*vertical-align: bottom;*/
+  position: relative;
+  margin-left: 800px;
+  bottom: 60px;
+}
+
+.number-right{
+  position: relative;
+  margin-left: 40px;
+  bottom: 60px;
+}
+
+img.comment {
+  position: relative;
+  margin-left: 40px;
+  bottom: 60px;
+}
+
 
 </style>
 </head>
@@ -146,8 +235,9 @@ h4 #right-column{
   <nav class="navbar navbar-default">
   <div class="navbar-header-left">
     <form class="navbar-form navbar-left">
-     <input type="text" class="form-contol" placeholder="Search">
-    </form>
+    <label class="form-label" for="search"></label>
+    <input class="form-field" type="text" id="search" placeholder="Search">
+  </form>
   </div>
   <div class="collaspe navbar-collaspe" id="bs-example-navbar-collaspe-1">
   <ul class="nav navbar-nav">
@@ -169,15 +259,54 @@ h4 #right-column{
   <div id="column-center">color green</div>
 </div>
 <div>
-<h4 id="day">
-  <span>Today</span>
+<h4>
+  <span id="day">Today</span>
   <span id="date">November 6th</span>
   <span id="right-column">Featured</span>
 </h4>
 </div>
 </div>
+<div class="tech-image">
+    <span class="button-arrow"></span>
+    <span class="button-number">987</span>
+<!-- <div class="post-thumbnail"> -->
+  <div>
+    <img class="thumbnail-image" src="https://ph-files.imgix.net/ac9087b8-5b51-4636-afdf-98adeb766a36?auto=format&w=2098&h=570" align="left" width="100" height="80">
+    <a class="post-item" href="/tech/product-hunt-2-0">Product Hunt 2.0</a>
+  </div>
+  <div>
+    <span class="post-item-tag">Discover and geek out about your next favorite thing</span>
+  </div>
+  <div>
+    <span class="post-item-platform">Web</span>
+  </div>
+</div>
+<div class="badge-right">
+  <img src="https://ph-avatars.imgix.net/2/original?auto=format&fit=crop&crop=faces&w=60&h=60" height="30" width="30">
+  <img class="comment" src="http://pro-php.ir/themes/bootstrap/images/png/128x128/comment.png" height="30" width="30">
+  <span class="number-right">101</span>
+</div>
+<div>
+  <span class="button-number">495</span>
+</div>
+<div>
+  <img class="thumbnail-image" src="https://ph-files.imgix.net/236992bc-6449-410c-9395-2f09711884cf?auto=format&w=1149&h=570" align="left" width="100" height="80">
+  <a class="post-item" href="/tech/startupresources.io">StartupResources.io</a>
+</div>
+<div>
+  <span class="post-item-tag">Tightly curated lists of the best start-up tools</span>
+</div>
+<div>
+  <span class="post-item-platform">Web</span>
+</div>
+<div class="badge-right">
+  <img src="https://ph-avatars.imgix.net/22183/original?auto=format&fit=crop&crop=faces&w=60&h=60" height="30" width="30">
+  <img class="comment" src="http://pro-php.ir/themes/bootstrap/images/png/128x128/comment.png" height="30" width="30">
+  <span class="number-right">46</span>
+</div>
+</div>
+<!-- <div class="post-item"> --
+<!-- </div> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
-
-
 </html>
